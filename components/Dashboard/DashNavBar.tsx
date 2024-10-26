@@ -1,4 +1,5 @@
 //import { abortOnSynchronousPlatformIOAccess } from 'next/dist/server/app-render/dynamic-rendering';
+import { Bell } from 'lucide-react';
 import React from 'react'
 
 const DashNavBar = () => {
@@ -20,7 +21,7 @@ const DashNavBar = () => {
       </div>
 
       {/* Right placeholder icon */}
-      <div className="bg-gray-300 rounded-full w-10 h-10"></div>
+      <Bell />
     </nav>
   );
 }
