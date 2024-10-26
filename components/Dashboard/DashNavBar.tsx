@@ -1,11 +1,28 @@
+//import { abortOnSynchronousPlatformIOAccess } from 'next/dist/server/app-render/dynamic-rendering';
 import React from 'react'
 
 const DashNavBar = () => {
   return (
-    <div className='bg-black sticky'>
-        <div className='text-white p-5 '>Company</div>
-    </div>
-  )
+    <nav className="bg-gray-800 flex items-center justify-between px-4 py-2">
+      {/* Left placeholder icon */}
+      <div className="flex items-center">
+        <div className="bg-blue-400 rounded-full w-10 h-10"></div>
+        <span className="text-white ml-3 font-semibold font-poppins">Marketing Wizard</span>
+      </div>
+
+      {/* Search bar */}
+      <div className="flex items-center bg-gray-200 rounded-full px-4 py-2 w-1/3">
+        <input
+          type="text"
+          placeholder="search bar"
+          className="bg-gray-200 focus:outline-none w-full font-poppins"
+        />
+      </div>
+
+      {/* Right placeholder icon */}
+      <div className="bg-gray-300 rounded-full w-10 h-10"></div>
+    </nav>
+  );
 }
 
 export default DashNavBar
